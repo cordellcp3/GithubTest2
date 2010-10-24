@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,6 @@ namespace WP7Test1
 {
     public partial class MainPage : PhoneApplicationPage
     {
-
         int counter;
         CameraCaptureTask cct;
 
@@ -68,7 +68,7 @@ namespace WP7Test1
 
         private void OrderCoffeeClick(object sender, EventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Kaffee wird geordert", "Info", MessageBoxButton.OKCancel);
+            MessageBoxResult result = MessageBox.Show("Ordering coffee...", "Info", MessageBoxButton.OKCancel);
 
             if (result == MessageBoxResult.OK)
             {
@@ -78,7 +78,7 @@ namespace WP7Test1
             }
             else 
             {
-				//TODO:
+		//TODO: 
                 //...
             }
         }
@@ -113,7 +113,5 @@ namespace WP7Test1
         {
             NavigationService.Navigate(new Uri("/Settings.xaml", UriKind.Relative));
         }
-
-
     }
 }
